@@ -2197,7 +2197,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .form-success.show { display: flex; }
 
 /* Map */
-.map-section { margin-top: 3rem; }
+.map-section { margin-top: 3rem; margin-bottom: 100px}
 .map-section .section-title { margin-bottom: 1.5rem; }
 
 .map-wrapper {
