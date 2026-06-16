@@ -1,0 +1,58 @@
+backend:
+  name: github
+  repo: Jessyfranky/school-website
+  branch: main # Change to master if your repo uses master
+
+# When a user uploads an image, it saves here automatically
+media_folder: "img"
+public_folder: "img"
+
+collections:
+  - name: "pages"
+    label: "Website Content"
+    files:
+      - name: "content"
+        label: "Edit Website Text & Images"
+        file: "content.json"
+        fields:
+          - name: "global"
+            label: "1. Global & Contact Data"
+            widget: "object"
+            fields:
+              - {name: "address", label: "School Address", widget: "string"}
+              - {name: "email", label: "Email Address", widget: "string"}
+              - {name: "facebook", label: "Facebook Link", widget: "string"}
+          
+          - name: "home"
+            label: "2. Home Page"
+            widget: "object"
+            fields:
+              - {name: "heroTitle", label: "Hero Title", widget: "string"}
+              - {name: "heroTagline", label: "Hero Tagline", widget: "text"}
+              - name: "metrics"
+                label: "Homepage Statistics"
+                widget: "object"
+                fields:
+                  - {name: "years", label: "Years of Excellence", widget: "number"}
+                  - {name: "scholars", label: "Scholars Produced", widget: "number"}
+                  - {name: "commitment", label: "Commitment (%)", widget: "number"}
+                  - {name: "values", label: "Core Values", widget: "number"}
+              - {name: "welcomeImages", label: "Welcome Images (Exactly 3)", widget: "list", field: {name: "image", widget: "image"}, min: 3, max: 3}
+          
+          - name: "about"
+            label: "3. About Us & Director"
+            widget: "object"
+            fields:
+              - {name: "vision", label: "Vision Statement", widget: "text"}
+              - {name: "directorName", label: "Director's Name", widget: "string"}
+              - {name: "directorTitle", label: "Director's Title", widget: "string"}
+              - {name: "directorImage", label: "Director's Photo", widget: "image"}
+              - {name: "photoStrip", label: "Photo Strip Images (Exactly 4)", widget: "list", field: {name: "image", widget: "image"}, min: 4, max: 4}
+
+          - name: "gallery"
+            label: "4. Gallery Carousel (Add/Remove infinitely)"
+            widget: "list"
+            fields:
+              - {name: "image", label: "Upload Image", widget: "image"}
+              - {name: "category", label: "Category", widget: "select", options: ["students", "classroom", "building"]}
+              - {name: "caption", label: "Image Caption", widget: "string"}

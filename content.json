@@ -1,0 +1,25 @@
+{
+  "global": {
+    "address": "#34 Forces Avenue, Old G.R.A By UTC Junction, Port Harcourt",
+    "email": "info@destinyfield.com",
+    "facebook": "https://facebook.com"
+  },
+  "home": {
+    "heroTitle": "Where Every Child Matters",
+    "heroTagline": "Raising a godly generation of outstanding learners with an achievers' mindset.",
+    "metrics": { "years": 15, "scholars": 500, "commitment": 100, "values": 5 },
+    "welcomeImages": ["img/pic 4.jpeg", "img/pic 19.jpeg", "img/pic 2.jpeg"]
+  },
+  "about": {
+    "vision": "To help every child fulfill their destiny.",
+    "directorName": "Pastor (Dr.) Ene Belema Secondus",
+    "directorTitle": "Founder & Director",
+    "directorImage": "img/ceo.jpeg",
+    "photoStrip": ["img/pic 11.jpeg", "img/pic 14.jpeg", "img/pic 6.jpeg", "img/pic 9.jpeg"]
+  },
+  "gallery": [
+    { "category": "students", "image": "img/pic 1.jpeg", "caption": "Joy of Learning" },
+    { "category": "classroom", "image": "img/pic 11.jpeg", "caption": "Academic Excellence" },
+    { "category": "building", "image": "img/pic 19.jpeg", "caption": "Our Campus" }
+  ]
+}
