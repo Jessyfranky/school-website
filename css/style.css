@@ -2197,7 +2197,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .form-success.show { display: flex; }
 
 /* Map */
-.map-section { margin-top: 3rem; margin-bottom: 100px}
+.map-section { margin-top: 3rem; }
 .map-section .section-title { margin-bottom: 1.5rem; }
 
 .map-wrapper {
@@ -2644,4 +2644,121 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
     height: auto !important;
     aspect-ratio: 4 / 3 !important; /* Forces every box into a perfect, uniform rectangle */
   }
+}
+/* ==========================================
+   CONTACT PAGE: SIDE-BY-SIDE LAYOUT
+========================================== */
+
+/* Utility for centering the top description text */
+.mx-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  max-width: 60ch;
+  margin-bottom: 3rem;
+}
+
+.contact-top-info {
+  margin-bottom: 4rem;
+}
+
+/* 1. Info Cards 3-Column Grid */
+.info-cards.grid-3-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 0;
+}
+
+/* 2. Form & Map Side-by-Side */
+.contact-split-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: stretch; /* Forces both columns to be the exact same height */
+}
+
+/* Make map wrapper stretch to fill the height to match the form */
+.map-section.side-map {
+  margin-top: 0; 
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.map-section.side-map .map-wrapper {
+  flex: 1; /* Forces the map iframe container to stretch vertically */
+  height: auto;
+  min-height: 400px;
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  border-bottom: none;
+}
+
+.map-section.side-map .map-address-badge {
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+}
+
+/* ── Mobile Layout Adjustments ── */
+@media (max-width: 1024px) {
+  .info-cards.grid-3-cols {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+  }
+  .contact-split-grid {
+    grid-template-columns: 1fr; /* Stacks the Map under the Form on smaller screens */
+  }
+  .map-section.side-map .map-wrapper {
+    min-height: 350px;
+  }
+}
+
+@media (max-width: 640px) {
+  .info-cards.grid-3-cols {
+    grid-template-columns: 1fr; /* 1 column on phones */
+  }
+}
+
+/* ==========================================
+   PAGE: PORTAL
+========================================== */
+
+
+.portal-card {
+  background: rgba(10, 22, 40, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-lg);
+  padding: 3.5rem 2.5rem;
+  text-align: center;
+  align-items: center;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portal-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(244, 180, 26, 0.3); /* Soft gold border on hover */
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.portal-icon {
+  width: 90px;
+  height: 90px;
+  background: rgba(244, 180, 26, 0.1);
+  color: var(--gold);
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.portal-card h3 {
+  font-family: var(--ff-display);
+  font-size: var(--sz-xl);
+  margin-bottom: 1rem;
+}
+
+.portal-card p {
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 2.5rem;
+  flex-grow: 1;
+  font-size: 1.05rem;
+  line-height: 1.6;
 }
