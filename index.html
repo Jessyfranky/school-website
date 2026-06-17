@@ -36,14 +36,17 @@
         <span></span><span></span><span></span>
       </button>
 
-      <ul class="nav-links" id="nav-links" role="list">
-        <li><a href="#home" class="nav-link active" data-page="home">Home</a></li>
-        <li><a href="#about" class="nav-link" data-page="about">About Us</a></li>
-        <li><a href="#admissions" class="nav-link" data-page="admissions">Admissions</a></li>
-        <li><a href="#news" class="nav-link" data-page="news">News & Blog</a></li>
-        <li><a href="#gallery" class="nav-link" data-page="gallery">Gallery</a></li>
-        <li><a href="#contact" class="nav-link" data-page="contact">Contact</a></li>
-      </ul>
+      <ul id="nav-links" class="nav-links" role="menu">
+          <li><a href="#home" class="nav-link active" data-page="home" role="menuitem">Home</a></li>
+          <li><a href="#about" class="nav-link" data-page="about" role="menuitem">About Us</a></li>
+          <li><a href="#admissions" class="nav-link" data-page="admissions" role="menuitem">Admissions</a></li>
+          <li><a href="#news" class="nav-link" data-page="news" role="menuitem">News</a></li>
+          <li><a href="#gallery" class="nav-link" data-page="gallery" role="menuitem">Gallery</a></li>
+          
+          <li><a href="#portal" class="nav-link" data-page="portal" role="menuitem">Portal</a></li>
+          
+          <li><a href="#contact" class="nav-link" data-page="contact" role="menuitem">Contact</a></li>
+        </ul>
     </nav>
   </header>
 
@@ -1525,10 +1528,41 @@
 
     </section>
 
+    <section id="portal" class="page">
+      <div class="page-hero small-hero">
+        <div class="page-hero-overlay"></div>
+        <div class="page-hero-content">
+          <p class="eyebrow light">Secure Access</p>
+          <h1>School Portal</h1>
+          <div class="breadcrumb">
+            <a href="#home" data-page="home">Home</a>
+            <i class="fas fa-chevron-right"></i>
+            <span>Portal</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-container">
+        <div class="portal-grid">
+          
+          <div class="portal-card reveal">
+            <div class="portal-icon"><i class="fas fa-user-graduate"></i></div>
+            <h3>Student & Staff Portal</h3>
+            <p>Access termly results, academic assignments and student records.</p>
+            <a href="https://dis.nhazi.com" target="_blank" rel="noopener" class="btn btn-gold">
+              Login to Portal <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
     <!-- ═══════════════════════════════════════════
          PAGE: CONTACT
     ═══════════════════════════════════════════ -->
-    <section id="contact" class="page">
+  <section id="contact" class="page">
       <div class="page-hero small-hero contact-hero">
         <div class="page-hero-overlay"></div>
         <div class="page-hero-content">
@@ -1543,72 +1577,80 @@
       </div>
 
       <div class="section-container contact-section">
-        <div class="contact-grid">
 
-          <!-- CONTACT INFO -->
-          <div class="contact-info">
-            <p class="eyebrow">Get in Touch</p>
-            <h2 class="section-title">Visit, Call or <em>Connect</em></h2>
-            <p class="body-text">
-              Our doors are always open. Whether you want to learn more about our school, schedule a visit or ask about admissions, we'd love to hear from you.
-            </p>
+        <div class="contact-top-info">
+          <p class="eyebrow center">Get in Touch</p>
+          <h2 class="section-title center">Visit, Call or <em>Connect</em></h2>
+          <p class="body-text center mx-auto">Our doors are always open. Whether you want to learn more about our school, schedule a visit or ask about admissions, we'd love to hear from you.</p>
 
-            <div class="info-cards">
-              <div class="info-card">
-                <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
-                <div>
-                  <h4>Our Address</h4>
-                  <p>#34 Forces Avenue, Old G.R.A By UTC Junction, Port Harcourt, Rivers State.</p>
-                </div>
+          <div class="info-cards grid-3-cols">
+            <div class="info-card">
+              <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <h4>Our Address</h4>
+                <p>#34 Forces Avenue, Old G.R.A By UTC Junction, Port Harcourt.</p>
               </div>
-              <div class="info-card">
-                <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
-                <div>
-                  <h4>Phone Numbers</h4>
-                  <a href="tel:08103169141">08103169141</a>
-                  <a href="tel:08067434761">08067434761</a>
-                  <a href="tel:08056196995">08056196995</a>
-                </div>
+            </div>
+            <div class="info-card">
+              <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
+              <div>
+                <h4>Phone Numbers</h4>
+                <a href="tel:08103169141">08103169141</a>
+                <a href="tel:08067434761">08067434761</a>
+                <a href="tel:08056196995">08056196995</a>
               </div>
-              <div class="info-card">
-                <div class="info-icon"><i class="fab fa-facebook"></i></div>
-                <div>
-                  <h4>Facebook</h4>
-                  <a href="https://facebook.com" target="_blank" rel="noopener">Destinyfield Int'l Schools</a>
-                </div>
+            </div>
+            <div class="info-card">
+              <div class="info-icon"><i class="far fa-clock"></i></div>
+              <div>
+                <h4>School Hours</h4>
+                <p>Monday – Friday: 7:30 AM – 4:00 PM</p>
+                <p>Saturday: By appointment</p>
               </div>
-              <div class="info-card">
-                <div class="info-icon"><i class="far fa-clock"></i></div>
-                <div>
-                  <h4>School Hours</h4>
-                  <p>Monday – Friday: 7:30 AM – 4:00 PM</p>
-                  <p>Saturday: By appointment</p>
-                </div>
+            </div>
+            <div class="info-card">
+              <div class="info-icon"><i class="fab fa-facebook"></i></div>
+              <div>
+                <h4>Facebook</h4>
+                <a href="https://facebook.com" target="_blank" rel="noopener">Destinyfield Int'l Schools</a>
+              </div>
+            </div>
+            <div class="info-card">
+              <div class="info-icon"><i class="fab fa-instagram"></i></div>
+              <div>
+                <h4>Instagram</h4>
+                <a href="https://instagram.com" target="_blank" rel="noopener">Destinyfield Int'l school</a>
+              </div>
+            </div>
+            <div class="info-card">
+              <div class="info-icon"><i class="fab fa-tiktok"></i></div>
+              <div>
+                <h4>TikTok</h4>
+                <a href="https://tiktok.com" target="_blank" rel="noopener">DESTINYFIELD INT'L SCHOOL PH</a>
               </div>
             </div>
           </div>
-
-  
-                
-          </div>
         </div>
 
-        <!-- MAP EMBED -->
-        <div class="map-section">
-          <h3 class="section-title center">Find Us</h3>
-          <div class="map-wrapper">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.7!2d7.0498!3d4.8156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNMKwNDgnNTYuMiJOIDfCsDAyJzU5LjMiRQ!5e0!3m2!1sen!2sng!4v1234567890"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-              title="Destinyfield International Schools on Google Maps">
-            </iframe>
+        <div class="contact-split-grid">
+          
+         
+          <div class="map-section side-map reveal">
+            <div class="map-wrapper">
+              <iframe
+                src="https://maps.google.com/maps?q=34+Forces+Avenue,+Old+G.R.A+Port+Harcourt&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Destinyfield International Schools on Google Maps">
+              </iframe>
+            </div>
+            <div class="map-address-badge">
+              <i class="fas fa-map-pin"></i>
+              <span>#34 Forces Avenue, Old G.R.A By UTC Junction, Port Harcourt</span>
+            </div>
           </div>
-          <div class="map-address-badge">
-            <i class="fas fa-map-pin"></i>
-            <span>#34 Forces Avenue, Old G.R.A By UTC Junction, Port Harcourt</span>
-          </div>
+
         </div>
       </div>
     </section>
